@@ -1,0 +1,113 @@
+.image-banner {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #dd601c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.selected-image {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.custom-file-upload:active {
+    background-color: #111;
+}
+
+.custom-file-upload::before {
+    content: 'Select Image';
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.create-blog-post {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 100vh;
+}
+
+.create-blog-post input[type="text"],
+.create-blog-post textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.create-blog-post button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.create-blog-post button:hover {
+    background-color: #555;
+}
+
+.create-blog-post button:active {
+    background-color: #111;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+/* CreateBlogPost.css */
+.ql-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.ql-formats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 30px; */
+}
+
+.ql-editor {
+    min-height: 50vh;
+    font-size: 14ypx;
+    padding: 10px;
+}
+
+.toolbar-container{
+    margin-bottom: 10px;
+}
