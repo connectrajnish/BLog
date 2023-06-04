@@ -30,7 +30,11 @@ const blogSchema = new mongoose.Schema(
       type: String,
       required: true
     },
-    image: String
+    image: String,
+    status: {
+      type: Boolean,
+      default: false
+    }
   },
   {
     timestamps: {
@@ -39,17 +43,13 @@ const blogSchema = new mongoose.Schema(
     }
   }
 );
-
-
-
-
-// Create a blog model
 const Blog = mongoose.model('Blog', blogSchema);
+
 
 //Storage engine for multer to handle file uploads
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, 'uploads/');
+    cb(null, '../client/public/uploads/');
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + '-' + file.originalname);
@@ -79,6 +79,7 @@ app.post('/blogs', upload.single('image'), (req, res) => {
     title,
     content,
     image: image ? image.path : null, // Store the image path in the blog document
+    status: true
   });
 
   newBlog.save()
