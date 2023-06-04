@@ -1,0 +1,28 @@
+/* BlogList.css */
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* BlogPost.css */
+  .blog-post {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 100%;
+  }
+  
+  .blog-post h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .blog-post p {
+    font-size: 15px;
+    text-align: justify;
+  }
+  
