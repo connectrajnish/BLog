@@ -88,7 +88,9 @@ const CreateBlogPost = ({ onBlogPostCreated }) => {
           ]}
         />
         </div>
-        <button type="submit">Create Post</button>
+        <div className='btn-container'>
+        <button type="submit">Post</button>
+        </div>
       </form>
     </div>
   );

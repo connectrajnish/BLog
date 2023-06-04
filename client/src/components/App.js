@@ -39,7 +39,7 @@ const App = () => {
     <div>
       <Header propWeaveOrExplore={propWeaveOrExplore} />
       {
-        weaveOrExplore === "explore" ? <BlogList blogPosts={blogPosts} /> : <CreateBlogPost onBlogPostCreated={handleBlogPostCreated} />
+        weaveOrExplore === "explore" ? <BlogList blogPosts={blogPosts} /> : <CreateBlogPost onBlogPostCreated={handleBlogPostCreated}/>
       }
     </div>
   );
