@@ -8,6 +8,7 @@ const CreateBlogPost = ({ onBlogPostCreated }) => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [selectedImage, setSelectedImage] = useState(null);
+  const [postedOrNot, setPostedOrNot] = useState(false);
 
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
