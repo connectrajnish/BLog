@@ -111,6 +111,11 @@ app.post('/blogs/:id/autosave', (req, res) => {
     .catch(error => res.status(400).json('Error: ' + error));
 });
 
+
+if(process.env.NODE_ENV == 'production'){
+  app.use(express.static('client/build'));
+}
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
