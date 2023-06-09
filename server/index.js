@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const multer = require('multer');
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 // Initialize the app
 const app = express();
