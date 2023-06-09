@@ -1,7 +1,9 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const multer = require('multer');
+const port = 8080;
 
 // Initialize the app
 const app = express();
@@ -11,14 +13,15 @@ app.use(express.json());
 app.use(cors());
 app.use("/uploads", express.static('uploads'))
 
+const uri = process.env.MONGO_URI;
+
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/blog', {
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
   .then(() => console.log('Connected to Database :: MongoDB'))
   .catch(error => console.log("Error in connecting to DB: ", error));
-
 // Create a blog schema
 const blogSchema = new mongoose.Schema(
   {
@@ -109,7 +112,6 @@ app.post('/blogs/:id/autosave', (req, res) => {
 });
 
 // Start the server
-const port = 8080;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
