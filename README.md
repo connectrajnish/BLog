@@ -24,7 +24,7 @@ Before running the application, make sure you have the following installed on yo
     cd ../client && npm install
     
 3. MongoDB Connection  
-- Create a file named ".env" in root directory
+- Create a file named ".env" in server folder
 - If you have MongoDB installed locally, follow these steps:
    * Open MongoDB Compass and click on "New Connection".
    * Save the connection as "Blog" (save & connect).
