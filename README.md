@@ -23,10 +23,14 @@ Before running the application, make sure you have the following installed on yo
     cd server && npm install
     cd ../client && npm install
     
-3. MongoDB Connection
+3. MongoDB Connection  
+- Create a file named ".env" in root directory
 - If you have MongoDB installed locally, follow these steps:
    * Open MongoDB Compass and click on "New Connection".
    * Save the connection as "Blog" (save & connect).
+   * copy the connection string
+- Create a variable as following-
+   * MONGO_URI = "<your mongoDB Atlas connection string or local db connection string>"
 
 3. Start server in one of the terminal:
     The server will start running on http://localhost:8080.
