@@ -1,4 +1,4 @@
-# BLog
+# Blog
 "Blog App" is a web application with using MERN Stack . It enables users to create, edit, and view blog posts effortlessly. Users can easily compose new posts with titles and content, which are seamlessly saved to the database. The app integrates an autosave feature, ensuring periodic preservation of post modifications.
 
 Home Page from where user can explore various blogs and even weave their own blog.
@@ -30,7 +30,7 @@ Before running the application, make sure you have the following installed on yo
    * Save the connection as "Blog" (save & connect).
    * copy the connection string
 - Create a variable as following-
-   * MONGO_URI = "<your mongoDB Atlas connection string or local db connection string>"
+   * MONGO_URI = "your mongoDB Atlas connection string or local db connection string"
 
 3. Start server in one of the terminal:
     The server will start running on http://localhost:8080.
