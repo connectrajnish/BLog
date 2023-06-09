@@ -31,7 +31,7 @@ const CreateBlogPost = ({ onBlogPostCreated }) => {
     formData.append('content', content);
 
     axios
-      .post('http://localhost:8080/blogs', formData, {
+      .post('https://backend-blog-352x.onrender.com/blogs', formData, {
         headers: {
           'Content-Type': 'multipart/form-data', // Set the content type to "multipart/form-data"
         },

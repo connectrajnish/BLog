@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8080/blogs')
+      .get('https://backend-blog-352x.onrender.com/blogs')
       .then((response) => {
         setBlogPosts(response.data);
       })
@@ -26,7 +26,7 @@ const App = () => {
 
   const handleBlogPostCreated = () => {
     axios
-      .get('http://localhost:8080/blogs')
+      .get('https://backend-blog-352x.onrender.com/blogs')
       .then((response) => {
         setBlogPosts(response.data);
       })
