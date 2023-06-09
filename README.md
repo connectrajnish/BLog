@@ -1,6 +1,9 @@
 # Blog
 "Blog App" is a web application with using MERN Stack . It enables users to create, edit, and view blog posts effortlessly. Users can easily compose new posts with titles and content, which are seamlessly saved to the database. The app integrates an autosave feature, ensuring periodic preservation of post modifications.
 
+Check the live version here: https://word-weaver.netlify.app/
+
+
 Home Page from where user can explore various blogs and even weave their own blog.
 ![Screenshot (47)](https://github.com/connectrajnish/BLog/assets/82881088/98a40a56-8fac-4cb3-83d5-54e417230b49)
 
